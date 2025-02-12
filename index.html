@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Personnelle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .message {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e7f7e7;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenue sur ma page personnelle</h1>
+</header>
+
+<section>
+    <h2>À propos de moi</h2>
+    <p>Bonjour, je m'appelle [Votre Nom]. Je suis passionné(e) par [votre parcours, par exemple : la technologie, la photographie, l'écriture].</p>
+    <p>Je suis un(e) [votre profession ou domaine d'étude] et j'adore explorer de nouveaux sujets comme [exemples de centres d'intérêt : l'innovation, l'art numérique, la musique].</p>
+</section>
+
+<section>
+    <h2>Ma passion</h2>
+    <p>Ce qui me passionne le plus, c'est [décrivez ici ce qui vous passionne]. Cette passion me pousse à [expliquez pourquoi cela vous motive].</p>
+    <p>Par exemple, cela m'inspire à [mentionnez des actions ou des projets que vous entreprenez à cause de cette passion].</p>
+</section>
+
+<section>
+    <h2>Interagir avec moi</h2>
+    <p>Cliquez sur le bouton ci-dessous pour voir un message spécial :</p>
+    <button onclick="afficherMessage()">Afficher un message</button>
+    <div class="message" id="message">Merci d'avoir visité ma page ! 😊</div>
+</section>
+
+<script>
+    function afficherMessage() {
+        var message = document.getElementById('message');
+        message.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
